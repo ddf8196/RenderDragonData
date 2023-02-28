@@ -1,0 +1,300 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "Checkerboarding",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "ColorMetalnessOutput": {
+      "reg": 7,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba8",
+      "unknownInt": 1,
+      "unknownByte": 7,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "EmissiveLinearRoughnessInput": {
+      "reg": 2,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 2,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "ColorMetalnessInput": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba8",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "NormalInput": {
+      "reg": 1,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rg16f",
+      "unknownInt": 1,
+      "unknownByte": 1,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "ViewDirectionAndSplitMaskInput": {
+      "reg": 6,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 6,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "PlaneIDInput": {
+      "reg": 3,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "r32ui",
+      "unknownInt": 1,
+      "unknownByte": 3,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "WorldPositionInput": {
+      "reg": 4,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba32f",
+      "unknownInt": 1,
+      "unknownByte": 4,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "LowPrecisionWorldPositionInput": {
+      "reg": 5,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 5,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "NormalOutput": {
+      "reg": 8,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rg16f",
+      "unknownInt": 1,
+      "unknownByte": 8,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "EmissiveLinearRoughnessOutput": {
+      "reg": 9,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 9,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "PlaneIDOutput": {
+      "reg": 10,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "r32ui",
+      "unknownInt": 1,
+      "unknownByte": 10,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "WorldPositionOutput": {
+      "reg": 11,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba32f",
+      "unknownInt": 1,
+      "unknownByte": 11,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "LowPrecisionWorldPositionOutput": {
+      "reg": 12,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 12,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "ViewDirectionAndSplitMaskOutput": {
+      "reg": 13,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 13,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "OtherSideOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    }
+  },
+  "dataOnly": true,
+  "passMap": {
+    "Fallback": {
+      "bitSet": "111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1492376483183020312
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7294559028675252130
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DoCheckerboarding": {
+      "bitSet": "011111010111111",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": false,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1492376483183020312
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7294559028675252130
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ESSL_100": {
+      "bitSet": "000000001000000",
+      "fallback": "DoCheckerboarding",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2864436484901426424
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -9105219523694802186
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

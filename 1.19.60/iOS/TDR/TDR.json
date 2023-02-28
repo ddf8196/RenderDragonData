@@ -1,0 +1,92 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "TDR",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "FakeRWBuffer": {
+      "reg": 0,
+      "access": "ReadWrite",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeRawBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "int",
+        "size": 4
+      }
+    }
+  },
+  "propertyFieldMap": {},
+  "dataOnly": true,
+  "passMap": {
+    "TDRPass": {
+      "bitSet": "011111010111111",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8918605125607446801
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Fallback": {
+      "bitSet": "111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1260091051854888471
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -196897651430602927
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
