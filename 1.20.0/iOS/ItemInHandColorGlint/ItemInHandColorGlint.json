@@ -1,0 +1,4282 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "ItemInHandColorGlint",
+  "hasParentName": true,
+  "parentName": "ItemInHandColor",
+  "samplerDefinitionMap": {
+    "GlintTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "GlintColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "UVAnimation": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    "TileLightColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "OverlayColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "ChangeColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ColorBased": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "FogControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LightWorldSpaceDirection": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        -1.0,
+        0.0,
+        1.0
+      ]
+    },
+    "MultiplicativeTintColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "UVScale": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SubPixelOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LightDiffuseColorAndIlluminance": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "AlphaTest": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "Off",
+        "MultiColorTint": "Off",
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1407719408982666029
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7152436903817788640
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8639570826977675891
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4710305386629170922
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2892492693512080962
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4689697594861193275
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3271744889627291257
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4375115254710967346
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8853691278921590321
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6989775488904815136
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2550983680469997388
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6008331515863826420
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7197947818747998527
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2391455371401979492
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -3472745395564850574
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 7950196455549686597
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Opaque": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "Off",
+        "MultiColorTint": "Off",
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 1692883881241911802
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6199618575308934617
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3914982670437895319
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -2777660750572009219
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 7209499325784713166
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4114765631125776296
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6929853021719560726
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -2438489397598776884
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -810101712791978582
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5567447202735373785
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -8589030855024776435
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3914760458547598103
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8255574212658333238
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5368989401512042922
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7153901704226327013
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -2650946511068858691
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Transparent": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "Off",
+        "MultiColorTint": "Off",
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4517803296243219587
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4142357062705413242
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -8119264207224689190
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4220751591486604310
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2157334830535365445
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5861873092292704990
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6195551203999251470
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5995895271478550836
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 990096319361459694
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8532127272308571060
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 1076504490349842223
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4323354450223136017
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4489340529362111338
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6525360321357898225
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 827453607858873863
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1489904198285045777
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DepthOnly": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "Off",
+        "MultiColorTint": "Off",
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4995226825173262488
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6558623538067666226
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7848272307369466456
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4572356593614407654
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2946252427847773009
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6555102636536128990
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5715281206968129867
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 7961198335328035591
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On",
+            "Instancing": "On",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1682517447547634160
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 7122425046201399166
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5774001427772336706
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7866488506711079345
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "On",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -2913254358298732627
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4078149460179200574
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off",
+            "Instancing": "Off",
+            "MultiColorTint": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 9130146996278836434
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "glintUV": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -3742845105512082225
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

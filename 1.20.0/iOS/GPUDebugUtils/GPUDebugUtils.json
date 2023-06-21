@@ -1,0 +1,119 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "GPUDebugUtils",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "FakeRWBuffer": {
+      "reg": 0,
+      "access": "ReadWrite",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeRawBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "int",
+        "size": 4
+      }
+    }
+  },
+  "propertyFieldMap": {},
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2307282391425296912
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 9163967046362589917
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "GpuValidationPass": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8917348218814100425
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TDRPass": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2886350778299221067
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

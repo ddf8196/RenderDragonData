@@ -1,0 +1,1350 @@
+{
+  "version": 22,
+  "encryptionVariant": "SimplePassphrase",
+  "name": "RTXStub",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {},
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "ResolveLightMeasurement": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3089479553003537735
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Atrous": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4979367268357177964
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CopyToFinal": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8047255292252493693
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AdaptiveDenoiserCalculateGradientsInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3838661951217966594
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 569477445172967384
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2520473658010684851
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardUpscaleSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3657086546593337764
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReprojectSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5156146650078556224
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardUpscale": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -4328889598786451126
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ClearVertexIrradianceCache": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8636871446896507931
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AccumulateGIInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -9110162889846141110
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFields": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -3942515957282662261
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FilterMomentsSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8806746208071813285
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReprojectSpecularOnly": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1457341205001563627
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SpecularFireflyFilter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 558221239647970136
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FinalCombine": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2187209590747822373
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AccumulateInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2547097159210013933
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ToneCurve": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2312020024110268442
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseFireflyFilter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5462879036597175215
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlurGIInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5948355739206588408
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlurGradients": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5080210960595043537
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AtrousSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7242932935231765797
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseFireflyFilterSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1326172485113176812
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "WFTest": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1100790643268093855
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CalculateFaceData": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2182546115606765666
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AdaptiveDenoiserGenerateReferenceInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -196929946773469226
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PathTracingRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 612663853844218703
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseRayGenCombinedInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -78105655262436809
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TileClassification": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1360264306697867912
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FinalizeDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5322781340403343802
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ShadowDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -3602652539122407524
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "IncidentLightMeterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7733019164625522911
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Reproject": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1392919710132533236
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFieldsShadow": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7230984642999437577
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ToneMappingHistogram": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1582832210664724896
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardInterleave": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3219931447910370152
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "UpdateVertexIrradianceCacheInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4029170198241020670
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CalculateInscatterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5093173561490765973
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SpecularRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 9149504788179050199
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FilterMoments": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5546259947624339126
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TemporalDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5281789628323826521
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TAA": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3447979305078360761
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "UpdateFaceIrradianceCacheInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -190604668059986351
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PreBlasSkinning": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3690163460181640614
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PrimaryCheckerboardRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7167669342364237788
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SunShadowRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6948386488405554205
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RefractionRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5894347861954255638
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFieldsSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4076980057618066455
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DrawLights": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7760259351229984513
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ClearFaceIrradianceCache": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 23129062757940617
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ExplicitLightSamplingInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2347984430756918128
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CalculateGIInscatterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1957226564846742216
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

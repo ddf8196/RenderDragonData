@@ -1,0 +1,212 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "Upscaling",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "InputTAAHistory": {
+      "reg": 1,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 1,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "InputFinalColor": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "OutputBuffer": {
+      "reg": 3,
+      "access": "Write",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "Type2D",
+      "textureFormat": "rgba16f",
+      "unknownInt": 1,
+      "unknownByte": 3,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "InputBufferMotionVectors": {
+      "reg": 2,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 2,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "RenderResolution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CurrentWorldOrigin": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "SubPixelJitter": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "RecipDisplayResolution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "PreviousWorldOrigin": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "RenderResolutionDivDisplayResolution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "DisplayResolution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "PreviousViewProjectionMatrixUniform": {
+      "num": 1,
+      "type": 4,
+      "hasData": false
+    },
+    "DisplayResolutionDivRenderResolution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CurrentViewProjectionMatrixUniform": {
+      "num": 1,
+      "type": 4,
+      "hasData": false
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7523740534076982536
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2863878326423589258
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TAAU": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6894606280455844746
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

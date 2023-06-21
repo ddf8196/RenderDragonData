@@ -1,0 +1,181 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "LightClustering",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "LightClusters": {
+      "reg": 0,
+      "access": "ReadWrite",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "LightCluster",
+        "size": 4
+      }
+    },
+    "LightLookupArray": {
+      "reg": 1,
+      "access": "ReadWrite",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 1,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "LightData",
+        "size": 4
+      }
+    },
+    "Extends": {
+      "reg": 2,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 2,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "LightExtends",
+        "size": 64
+      }
+    }
+  },
+  "propertyFieldMap": {
+    "ClusterNearFarWidthHeight": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ClusterDimensions": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LightsPerCluster": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        16.0,
+        16.0,
+        16.0,
+        16.0
+      ]
+    },
+    "CameraFarPlane": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ClusterSize": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Metal",
+                "stage": "Vertex",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1898926923469257723
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Metal",
+                "stage": "Fragment",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -253328180228016023
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ClusterLights": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Metal",
+                "stage": "Compute",
+                "platform": "Metal"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8897782115628803461
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
