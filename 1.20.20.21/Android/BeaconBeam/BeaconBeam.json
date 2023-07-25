@@ -1,0 +1,800 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "BeaconBeam",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "BeaconTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "UVAnimation": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "OverlayColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "TileLightColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "FogAndDistanceControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SubPixelOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Opaque": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "On"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4839082297030476593
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 7142663229221885196
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5451818636144706460
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6139192365458359916
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6208779593713120115
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6976978356341995030
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5781735154483999254
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6929084874124678463
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Transparent": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Fancy": "On"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2610559219714322246
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5742060173615957864
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1644166351730883029
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -7214786132327006446
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Fancy": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2953442645160170048
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -2687456166107798521
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "normal": {
+                    "type": "Vec4",
+                    "attribute": "Normal",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -344411124278287606
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texCoords": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "light": {
+                    "type": "Vec4",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "fog": {
+                    "type": "Vec4",
+                    "attribute": "Color2",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 1143530779759034820
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

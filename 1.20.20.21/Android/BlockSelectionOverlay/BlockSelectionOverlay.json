@@ -1,0 +1,263 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "BlockSelectionOverlay",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "MatTexture": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": true,
+      "defaultTexture": "white",
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "SubPixelOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "MatColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Transparent": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "AlphaTest": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "AlphaTest": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6209601299686557632
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6659094610508155871
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8552142140783086818
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4711430205353182578
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "AlphaTest": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5562609168414293116
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6508975762125960472
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4102395878598119882
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "texcoord0": {
+                    "type": "Vec2",
+                    "attribute": "TexCoord0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 742908268499379464
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

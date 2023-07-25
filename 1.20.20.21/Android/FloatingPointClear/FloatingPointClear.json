@@ -1,0 +1,96 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "FloatingPointClear",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {
+    "ClearColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Clear": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3485158923255006958
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 183089285087685829
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2681899459437057350
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -4202214735983851634
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

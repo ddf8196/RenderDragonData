@@ -1,0 +1,2549 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "CloudsForwardPBR",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "ShadowCascades1": {
+      "reg": 2,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2DArrayShadow",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 2,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "DirectionalLightSources": {
+      "reg": 0,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "LightSourceWorldInfo",
+        "size": 320
+      }
+    },
+    "SpecularIBL": {
+      "reg": 8,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "TypeCube",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 8,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "BrdfMap": {
+      "reg": 9,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": false,
+      "type": "Type2D",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 9,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "LightLookupArray": {
+      "reg": 4,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 4,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "LightData",
+        "size": 4
+      }
+    },
+    "ShadowCascades0": {
+      "reg": 1,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2DArrayShadow",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 1,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "CloudShadow": {
+      "reg": 3,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2DShadow",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 3,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "Lights": {
+      "reg": 5,
+      "access": "Read",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeStructuredBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 5,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "Light",
+        "size": 48
+      }
+    },
+    "PointLightShadowTextureArray": {
+      "reg": 6,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2DArrayShadow",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 6,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    },
+    "ScatteringBuffer": {
+      "reg": 7,
+      "access": "Read",
+      "precision": 2,
+      "allowUnorderedAccess": false,
+      "type": "Type2DArray",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 7,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": false
+    }
+  },
+  "propertyFieldMap": {
+    "AtmosphericScatteringEnabled": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "VolumeScatteringEnabled": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "MoonColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "ShadowParams": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "DistanceControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "PointLightDiffuseFadeOutParameters": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "MoonDir": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "FogSkyBlend": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "AtmosphericScattering": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "FogAndDistanceControl": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ClusterSize": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "SubPixelOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SunDir": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ShadowBias": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "PointLightShadowParams1": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "RenderChunkFogAlpha": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "DiffuseSpecularEmissiveAmbientTermToggles": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "DirectionalLightToggleAndCountAndMaxDistance": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "EmissiveMultiplierAndDesaturationAndCloudPCFAndContribution": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        0.0,
+        1.0,
+        0.5
+      ]
+    },
+    "DirectionalShadowModeAndCloudShadowToggleAndPointLightToggleAndShadowToggle": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        2.0,
+        1.0,
+        1.0,
+        0.0
+      ]
+    },
+    "CascadeShadowResolutions": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "ShadowSlopeBias": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "ShadowPCFWidth": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "VolumeDimensions": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "FogColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "BlockBaseAmbientLightColorIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "PrepassUVOffset": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SkyAmbientLightColorIntensity": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "ClusterDimensions": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "ClusterNearFarWidthHeight": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "PointLightSpecularFadeOutParameters": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "SunColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "VolumeNearFar": {
+      "num": 1,
+      "type": 2,
+      "hasData": false
+    },
+    "IBLParameters": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CloudColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "SkyZenithColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "SkyHorizonColor": {
+      "num": 1,
+      "type": 2,
+      "hasData": true,
+      "vectorData": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "CloudShadowProj": {
+      "num": 1,
+      "type": 4,
+      "hasData": false
+    },
+    "PointLightProj": {
+      "num": 1,
+      "type": 4,
+      "hasData": false
+    }
+  },
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "ForwardPBRTransparent": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 559855593825469949
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 122957981830574535
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8148323854534389209
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4789705273448618442
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 1566213749816804390
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4144500238296454644
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -455455322926161224
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1952651978670130179
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -8513479286188858466
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -340013692561597308
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1165568636785379035
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -343530881356403408
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6259533303306711447
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 6052192194556080438
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -4547109885170044135
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -934712387045216127
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DepthOnly": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 559855593825469949
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5048090440293384749
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8204951510203736371
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8506496710545403630
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1641978568912800131
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1608303913599897216
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8148323854534389209
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4754464086821482997
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -8513479286188858466
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 2009516866764492536
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5807199814708887338
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8241517877197430888
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4505786797682704489
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3727124649088571673
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1165568636785379035
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -4200808804986219256
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {
+        "Instancing": "Off"
+      },
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "Off"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4465293802682713862
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -1165568636785379035
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8595457929427855385
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -8513479286188858466
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8436310531671356816
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 199573602753360538
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5785909131447580905
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -6705446207858023895
+              }
+            }
+          ]
+        },
+        {
+          "isSupported": true,
+          "flags": {
+            "Instancing": "On"
+          },
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8148323854534389209
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 4167345850751240887
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 559855593825469949
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 8590844704938215764
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": -5166811656711441313
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5872377869607782103
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "worldPosition": {
+                    "type": "Vec3",
+                    "attribute": "TexCoord3",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "ndcPosition": {
+                    "type": "Vec3",
+                    "attribute": "Color1",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 5478493444601793681
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {
+                  "position": {
+                    "type": "Vec3",
+                    "attribute": "Position",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "color0": {
+                    "type": "Vec4",
+                    "attribute": "Color0",
+                    "isPerInstance": false,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData2": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord6",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData0": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord8",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData1": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord7",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  },
+                  "instanceData3": {
+                    "type": "Vec4",
+                    "attribute": "TexCoord5",
+                    "isPerInstance": true,
+                    "hasPrecisionConstraint": false,
+                    "hasInterpolationConstraint": false
+                  }
+                },
+                "sourceHash": 3456240874645688413
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

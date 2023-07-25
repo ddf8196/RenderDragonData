@@ -1,0 +1,2574 @@
+{
+  "version": 22,
+  "encryptionVariant": "SimplePassphrase",
+  "name": "RTXStub",
+  "hasParentName": false,
+  "samplerDefinitionMap": {},
+  "propertyFieldMap": {},
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "CalculateGIInscatterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7591005051803735093
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PreBlasSkinning": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2645868974925236078
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_310",
+                "stage": "Vertex",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5118852519543358138
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_310",
+                "stage": "Fragment",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -6888269883643811355
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ResolveLightMeasurement": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6277416042547267395
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ClearVertexIrradianceCache": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -777574304621065582
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TAA": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8759489383135761923
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ClearFaceIrradianceCache": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 5934198237136850454
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Reproject": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -6385416162748965653
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AccumulateInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 148283510163088487
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AccumulateGIInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2964028931692997582
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlurGIInscatter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -210987401241903528
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReprojectSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -3174977206512283257
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ReprojectSpecularOnly": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7038514188755495930
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FilterMoments": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1051434929566967206
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFields": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8938682501624712897
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Atrous": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7858686764626399040
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FilterMomentsSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -3271213536035980805
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFieldsSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 9131167584960487956
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CopyToFinal": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3317863303076929984
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "UpdateVertexIrradianceCacheInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3187263938023721695
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AtrousSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7873484024355123003
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FinalCombine": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -4917167323111707994
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseFireflyFilter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8738935309583726031
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseFireflyFilterSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6747965374188037913
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ShadowDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4012165144737324734
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PrimaryCheckerboardRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4389551160792437887
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "IncidentLightMeterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7094099459114869926
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SpecularFireflyFilter": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7114546549971215804
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CalculateFaceData": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -699991144573971353
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardUpscale": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2127284640515779040
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardUpscaleSH": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 383938365580078762
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TemporalDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3908734332412738407
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "FinalizeDenoising": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6819293526305408541
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlendCheckerboardFieldsShadow": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 9103517017529125081
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "WFTest": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6433902592532013005
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DrawLights": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 7931995063067453563
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ToneMappingHistogram": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -2095119109826385971
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ToneCurve": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4013463457981496834
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CheckerboardInterleave": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -6853510962263033433
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TileClassification": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 72805011107850356
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "BlurGradients": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -6166719311705191886
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SunShadowRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8845612689602982797
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RefractionRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4582310869736478699
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "DiffuseRayGenCombinedInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1748205476697320599
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AdaptiveDenoiserCalculateGradientsInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -80734990119256814
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "AdaptiveDenoiserGenerateReferenceInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8353323530510694996
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "SpecularRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 785659949715493630
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "ExplicitLightSamplingInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 366360651532376246
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "PathTracingRayGenInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -8942356171040191900
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "UpdateFaceIrradianceCacheInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -4738666951163299593
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "CalculateInscatterInline": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "ESSL_100",
+                "stage": "Vertex",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 4867023728583279055
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "ESSL_310",
+                "stage": "Compute",
+                "platform": "ESSL_310"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 1931324274589693655
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "ESSL_100",
+                "stage": "Fragment",
+                "platform": "ESSL_100"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6767487241830734043
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

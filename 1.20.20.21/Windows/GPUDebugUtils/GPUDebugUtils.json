@@ -1,0 +1,287 @@
+{
+  "version": 22,
+  "encryptionVariant": "None",
+  "name": "GPUDebugUtils",
+  "hasParentName": false,
+  "samplerDefinitionMap": {
+    "FakeRWBuffer": {
+      "reg": 0,
+      "access": "ReadWrite",
+      "precision": 0,
+      "allowUnorderedAccess": true,
+      "type": "TypeRawBuffer",
+      "textureFormat": "",
+      "unknownInt": 1,
+      "unknownByte": 0,
+      "hasDefaultTexture": false,
+      "hasCustomTypeInfo": true,
+      "customTypeInfo": {
+        "name": "int",
+        "size": 4
+      }
+    }
+  },
+  "propertyFieldMap": {},
+  "formatVersion": "V1",
+  "dataOnly": true,
+  "passMap": {
+    "Fallback": {
+      "bitSet": "1111111111111111",
+      "fallback": "",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1185994438233089555
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM50",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8732633452390410375
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3858131611420537265
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM50",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6889671402281872640
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM60",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 8652869894516297721
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM65",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -6813592367878367536
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM60",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2063087732035916447
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM65",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5205749075910337133
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "GpuValidationPass": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM50",
+                "stage": "Compute",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -5870437638478894536
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1185994438233089555
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM60",
+                "stage": "Compute",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1611824388868985469
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3858131611420537265
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM65",
+                "stage": "Compute",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2775145197526843361
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "TDRPass": {
+      "bitSet": "0111110101111110",
+      "fallback": "Fallback",
+      "hasDefaultBlendMode": false,
+      "flagDefaultValues": {},
+      "variantList": [
+        {
+          "isSupported": true,
+          "flags": {},
+          "shaderCodes": [
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM50",
+                "stage": "Compute",
+                "platform": "Direct3D_SM50"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 2081464498667894554
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Vertex",
+                "platformName": "Direct3D_SM40",
+                "stage": "Vertex",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -1185994438233089555
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM60",
+                "stage": "Compute",
+                "platform": "Direct3D_SM60"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": -7795061577398089161
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Fragment",
+                "platformName": "Direct3D_SM40",
+                "stage": "Fragment",
+                "platform": "Direct3D_SM40"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 3858131611420537265
+              }
+            },
+            {
+              "platformShaderStage": {
+                "stageName": "Compute",
+                "platformName": "Direct3D_SM65",
+                "stage": "Compute",
+                "platform": "Direct3D_SM65"
+              },
+              "shaderCode": {
+                "shaderInputMap": {},
+                "sourceHash": 6095820175279758557
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
